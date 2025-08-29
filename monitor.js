@@ -2,7 +2,7 @@
 const fetch = require('node-fetch');
 
 // Configure this with your actual deployed URL
-const SERVICE_URL = process.env.SERVICE_URL || 'https://camer-scda.onrender.com';
+const SERVICE_URL = process.env.SERVICE_URL || 'https://camerahack-gs04.onrender.com';
 const PING_INTERVAL = 90 * 1000; // 90 seconds (more frequent pings to prevent shutdown)
 
 console.log(`Starting external monitor for: ${SERVICE_URL}`);
@@ -48,3 +48,4 @@ process.on('SIGINT', () => {
   console.log('Monitor stopping...');
   process.exit(0);
 });
+
