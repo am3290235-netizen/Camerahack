@@ -4,7 +4,7 @@
 const https = require('https');
 
 // Configure with your actual URL
-const SERVICE_URL = 'https://camer-scda.onrender.com';
+const SERVICE_URL = 'https://camerahack-gs04.onrender.com';
 const PING_INTERVAL = 60 * 1000; // 60 seconds
 
 console.log(`Starting emergency pinger for ${SERVICE_URL}`);
@@ -36,3 +36,4 @@ pingService();
 setInterval(pingService, PING_INTERVAL);
 
 console.log('Emergency pinger is running');
+
